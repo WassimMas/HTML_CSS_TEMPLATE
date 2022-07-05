@@ -642,6 +642,7 @@ color:var(--whiteColor) ;
   opacity: 0;
   visibility: hidden;
   
+  
 }
 .team-item .team-img img {
   width: 100%;
@@ -669,8 +670,7 @@ color:var(--whiteColor) ;
   height: 40px;
   background-color: #7ba7ff;
   color: var(--whiteColor);
-  margin-left: auto;
-  
+  margin-left: auto; 
 }
 .team-overlay a i {
   line-height: 40px;
@@ -745,6 +745,7 @@ background-color: #f8f8f8;
 .contact-info {
   overflow: hidden;
   text-align: center;
+  
 }
 .contact-item {
   float: left;
@@ -799,3 +800,63 @@ border-radius: 50%;
   text-transform: uppercase;
 }
 
+/* message form */
+.user-information {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+  "name email"
+  "subject subject"
+  "message message"
+  "submit submit";
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  
+}
+#name {
+  grid-area: name;
+  height: 40px;
+  border: none;
+  background-color: var(--bg-gray);
+  font-family: 'Varela Round', sans-serif;
+}
+#email {
+  grid-area: email;
+  height: 40px;
+  border: none;
+  background-color: var(--bg-gray);
+  font-family: 'Varela Round', sans-serif;
+}
+#subject {
+  grid-area: subject;
+  height: 40px;
+  border: none;
+  background-color: var(--bg-gray);
+  font-family: 'Varela Round', sans-serif;
+}
+#message {
+  grid-area: message;
+  height: 80px;
+  border: none;
+  background-color: var(--bg-gray);
+  font-family: 'Varela Round', sans-serif;
+}
+
+#submit {
+  grid-area: submit;
+  height: 45px;
+  width: 20%;
+  margin: 0 auto;
+  border: none;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  border-radius: 5px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 15px;
+  transition: opacity 0.5s;
+}
+#submit:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
